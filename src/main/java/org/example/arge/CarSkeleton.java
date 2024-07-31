@@ -31,4 +31,12 @@ public class CarSkeleton {
     public String getDescription() {
         return description;
     }
+
+    @Override
+    public String toString() {
+        return "CarSkeleton{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

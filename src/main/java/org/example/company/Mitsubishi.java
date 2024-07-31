@@ -19,4 +19,9 @@ public class Mitsubishi extends Car{
     public String startEngine() {
         return "Mitsubishi is braking";
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

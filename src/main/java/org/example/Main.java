@@ -1,5 +1,9 @@
 package org.example;
 
+import org.example.arge.CarSkeleton;
+import org.example.arge.ElectricCar;
+import org.example.arge.GasPoweredCar;
+import org.example.arge.HybridCar;
 import org.example.company.Car;
 import org.example.company.Ford;
 import org.example.company.Holden;
@@ -39,6 +43,23 @@ public class Main {
         System.out.println(holden.accelerate());
 
         System.out.println(holden.brake());
-    }
+
+        CarSkeleton carSkeleton = new CarSkeleton("Mmn", "Bu konu ne ya böyle beynimin belirli bölgelerini hissediyorum.");
+        carSkeleton.startEngine();
+        System.out.println(carSkeleton.toString());
+
+        CarSkeleton electricCar = new ElectricCar("Ershn", "Bu gün sanki beynimle koştum", 100.10, 19);
+        electricCar.startEngine();
+        System.out.println(electricCar.toString());
+
+        CarSkeleton gasPoweredCar = new GasPoweredCar("Ordu", " Bu konunun üzerine ne düşünmem gerektiğini bile bilmiyorum", 69.3, 5);
+        gasPoweredCar.startEngine();
+        System.out.println(gasPoweredCar.toString());
+
+        CarSkeleton hybridCar = new HybridCar("Vona", "Ama yapabildiğimi görmek yine de güzel galiba ilahi güçler yardımcı oluyor", 52.2, 52,52);
+        hybridCar.startEngine();
+        System.out.println(hybridCar.toString());
+   }
+
 
 }
